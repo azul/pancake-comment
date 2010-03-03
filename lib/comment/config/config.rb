@@ -9,7 +9,7 @@ class Comment
   class self::Configuration
 
     default :comment_index_title, 'the list of all comments', 'title showing on root'
-    default :commentable_class, 'Blog::BlogEntry', 'class we are commenting on'
+
     # Add defaults to your stack configuration.
     # This is scoped to this stack, and is inhertied into child stacks
     #
