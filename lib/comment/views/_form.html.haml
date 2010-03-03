@@ -1,0 +1,12 @@
+%form{:action => url(:home), :method => 'post'}
+  %div
+    %label{:for => 'comment_post_author'} Author
+    %div
+      %input{:id => 'comment_post_author', :type => 'text', :name => 'comment_post[author]', :size => 30}
+
+  %div
+    %label{:for => 'comment_post_body'} Body
+    %div
+      %textarea{:id => 'comment_post_body', :name => 'comment_post[body]', :rows => 8, :cols => 60}
+
+  %input{:type => 'submit', :value => "Create"}

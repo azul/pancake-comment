@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %title
+      - content_block(:title) do
+        Welcome to
+        = configuration.comment_index_title
+
+  %body
+
+    -content_block :header do
+      %h1
+        Welcome the the
+        = configuration.comment_index_title
+
+
+    -content_block :content do
+      This is the list of all comments in the simple comment enginge for the pancake-blog.
+
+    -content_block :footer do
+      .footer
+        End Of the List of all comments
+

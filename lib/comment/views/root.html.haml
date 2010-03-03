@@ -1,0 +1,10 @@
+- inherits_from :base
+
+- content_block :content do
+
+  %div
+    This is a simple comment stack that will serve as a battleground for developing and testing this delicious framework.
+
+  = partial :summary, :with => v.comment_posts
+
+  = partial :form

@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+ENV['RACK_ENV'] ||= ARGV[0] || "development"
+
+ARGV.clear # Don't pass args to irb
+
+require 'rubygems'
+require 'pancake'
+
+Pancake.root = Pancake.get_root(__FILE__, "..")
+
+# Load the Comment stack
+require File.join(Pancake.root, "..", "comment")
+Pancake::Console.new(Comment)
+
+
