@@ -34,6 +34,7 @@ Gem::Specification.new do |s|
      "lib/comment/script/console",
      "lib/comment/tasks/comment.rake",
      "lib/comment/views/_summary.html.haml",
+     "lib/comment/views/_form.html.haml",
      "lib/comment/views/base.html.haml",
      "lib/comment/views/root.html.haml",
      "spec/comment_spec.rb",
